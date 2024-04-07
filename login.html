@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Université Claude Bernard Lyon 1 - Login Page</title>
+</head>
+<body>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="presentation.html">Formations</a></li>
+            <li><a href="activites.html">Activités</a></li>
+            <li><a href="services.html">Services</a></li>
+         </ul> 
+        <button class="btn-login"><a href="login.html">CONNEXION</a></button>
+    </div>
+
+    <img id="menu-lgn" src="img/menu.png" alt="Bouton Menu" />
+
+    <section class="login-page">
+
+        <div class="form-box">
+            <form action="">
+                <h1>Compte</h1>
+                <div class="inputbox">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bx-mail-send' ></i>
+                </div>
+
+                <div class="inputbox">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox">
+                    <p>Remember Me</p>
+                </div>
+
+                <button id="connect"><a href="etudiants.html">Connexion</a></button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+    <script>
+
+        const menuHamburger = document.querySelector("#menu-lgn")
+        const sideBar = document.querySelector(".sidebar")
+
+        menuHamburger.addEventListener('click', () => {
+        sideBar.classList.toggle('menu-hamburger')
+        })
+
+    </script>
+
+</html>
